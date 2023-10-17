@@ -11,11 +11,13 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.feature_extraction.text import CountVectorizer
 # Set background color
 st.markdown(
+    '''
     <style>
     body {
         background-color: #f2f2f2; 
     }
     </style>
+    '''
     ,
     unsafe_allow_html=True
 )
