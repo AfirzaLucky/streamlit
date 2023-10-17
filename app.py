@@ -8,7 +8,17 @@ from sklearn.metrics import accuracy_score
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.feature_extraction.text import CountVectorizer
-
+# Set background color
+st.markdown(
+    """
+    <style>
+    body {
+        background-color: #f2f2f2; /* Change to the desired gray color code */
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 Data, lda, Model, Implementasi = st.tabs(['Data', 'LDA', 'Modelling', 'Implementasi'])
 
 with Data:
