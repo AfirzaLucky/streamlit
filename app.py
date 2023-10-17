@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+import re
 from sklearn.decomposition import LatentDirichletAllocation
 from sklearn.model_selection import train_test_split
 from sklearn.naive_bayes import MultinomialNB
@@ -10,13 +11,12 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.feature_extraction.text import CountVectorizer
 # Set background color
 st.markdown(
-    """
     <style>
     body {
-        background-color: #f2f2f2; /* Change to the desired gray color code */
+        background-color: #f2f2f2; 
     }
     </style>
-    """,
+    ,
     unsafe_allow_html=True
 )
 Data, lda, Model, Implementasi = st.tabs(['Data', 'LDA', 'Modelling', 'Implementasi'])
